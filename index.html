@@ -15,9 +15,14 @@
 
     <header class="site-header">
       <nav class="container nav" aria-label="Primary">
-        <a class="brand" href="#top">Haidar</a>
+        <a class="brand" href="#top">Haidar AlDahan</a>
 
-        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="nav-links"
+        >
           Menu
         </button>
 
@@ -27,7 +32,12 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
 
-        <button id="themeToggle" class="theme-toggle" type="button" aria-pressed="false">
+        <button
+          id="themeToggle"
+          class="theme-toggle"
+          type="button"
+          aria-pressed="false"
+        >
           Theme
         </button>
       </nav>
@@ -40,24 +50,24 @@
             <p class="kicker">SWE363 • Web Engineering</p>
             <h1>Hi, I’m <span class="accent">Haidar</span>.</h1>
             <p class="tagline">
-              Software Engineering student building clean, practical apps and web experiences.
+              Software Engineering student building clean, practical apps and
+              web experiences.
             </p>
 
             <div class="hero-actions">
               <a class="btn primary" href="#projects">View Projects</a>
               <a class="btn" href="#contact">Contact Me</a>
             </div>
-
-            <p id="greeting" class="greeting" aria-live="polite"></p>
           </div>
 
           <div class="hero-media">
             <img
-              src="assets/images/profile-placeholder.png"
-              alt="Profile placeholder"
+              src="assets/images/profile-pic.jpg"
+              alt="Profile photo"
               width="360"
               height="360"
               loading="lazy"
+              class="profile-img"
             />
           </div>
         </div>
@@ -67,13 +77,62 @@
         <div class="container">
           <h2>About Me</h2>
           <p>
-            I’m a Software Engineering student at KFUPM. I enjoy building practical products with clean
-            UI, solid structure, and reliable behavior.
+            I’m a Software Engineering student at KFUPM. I enjoy building
+            practical products with clean UI, solid structure, and reliable
+            behavior.
           </p>
           <p>
-            Recently, I’ve been working on mobile apps in Flutter and improving my web fundamentals
-            in HTML, CSS, and JavaScript.
+            Recently, I’ve been working on mobile apps in Flutter and improving
+            my web fundamentals in HTML, CSS, and JavaScript.
           </p>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="container">
+          <h2>Technical Skills</h2>
+
+          <div class="skills-grid">
+            <div class="skill-item">
+              <div class="skill-header">
+                <span>Java</span>
+                <span>7/10</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" style="width: 70%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-header">
+                <span>Dart</span>
+                <span>8/10</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" style="width: 80%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-header">
+                <span>Angular</span>
+                <span>3/10</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" style="width: 30%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-header">
+                <span>Python</span>
+                <span>6/10</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" style="width: 60%"></div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -81,68 +140,99 @@
         <div class="container">
           <div class="section-head">
             <h2>Projects</h2>
-            <p class="muted">Two sample projects (replace these with yours).</p>
           </div>
 
           <div class="grid projects-grid">
             <article class="card project-card">
-              <img
-                src="assets/images/project-placeholder-1.png"
-                alt="Project 1 placeholder"
-                loading="lazy"
-              />
+              <div class="project-image">
+                <img
+                  src="assets/images/gym-tracker-app.png"
+                  alt="Workout Tracker poster"
+                  loading="lazy"
+                />
+              </div>
+
               <div class="card-body">
                 <h3>Workout Tracker</h3>
                 <p>
-                  A fitness tracking app with templates, PR detection, and offline-first storage.
+                  Workout Tracker is a structured, performance-focused mobile
+                  application built with Flutter to help users plan, track, and
+                  analyze their workouts with precision.
                 </p>
-                <div class="card-actions">
-                  <a class="link" href="#" aria-label="Open Project 1">Details</a>
-                </div>
+                <p>
+                  The app allows users to create custom workout templates, log
+                  exercises and sets, track personal records (PRs), monitor
+                  progress history. It is designed with a clean, intuitive UI
+                  and optimized for both offline usage and future online
+                  synchronization.
+                </p>
               </div>
             </article>
 
             <article class="card project-card">
-              <img
-                src="assets/images/project-placeholder-2.png"
-                alt="Project 2 placeholder"
-                loading="lazy"
-              />
+              <div class="project-image">
+                <img
+                  src="assets/images/planet-project.png"
+                  alt="Planet project"
+                  loading="lazy"
+                />
+              </div>
+
               <div class="card-body">
-                <h3>Campus Marketplace</h3>
+                <h3>Beyond Horizons — Planetary Age & Weight Explorer</h3>
                 <p>
-                  A marketplace concept focused on clean listings, search, and a smooth posting flow.
+                  An interactive web application developed for the Aerospace
+                  Club’s Beyond Horizons event that lets users calculate their
+                  age and weight on different planets. The app uses real
+                  planetary data and features high-resolution 2K spinning planet
+                  visuals for an immersive experience. Built with HTML, CSS, and
+                  JavaScript, focusing on responsive design, smooth animations,
+                  and dynamic user interaction.
                 </p>
-                <div class="card-actions">
-                  <a class="link" href="#" aria-label="Open Project 2">Details</a>
-                </div>
               </div>
             </article>
           </div>
         </div>
       </section>
 
-      <section id="contact" class="section">
+      <section id="contact" class="section">1
         <div class="container">
           <h2>Contact</h2>
-          <p class="muted">This form has no backend. We’ll handle validation + UI feedback in JS.</p>
+          <p class="muted"></p>
 
           <form id="contactForm" class="card form" novalidate>
             <div class="form-row">
               <label for="name">Name</label>
-              <input id="name" name="name" type="text" autocomplete="name" required />
+              <input
+                id="name"
+                name="name"
+                type="text"
+                autocomplete="name"
+                required
+              />
               <small class="error" data-error-for="name"></small>
             </div>
 
             <div class="form-row">
               <label for="email">Email</label>
-              <input id="email" name="email" type="email" autocomplete="email" required />
+              <input
+                id="email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                required
+              />
               <small class="error" data-error-for="email"></small>
             </div>
 
             <div class="form-row">
               <label for="message">Message</label>
-              <textarea id="message" name="message" rows="5" required></textarea>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
               <small class="error" data-error-for="message"></small>
             </div>
 
@@ -157,7 +247,6 @@
 
     <footer class="site-footer">
       <div class="container footer-inner">
-        <p>© <span id="year"></span> Haidar AlDahan</p>
         <a class="link" href="#top">Back to top</a>
       </div>
     </footer>
